@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- GET, POST, PUT (PATCH), DELETE -->
+    <!-- CRUD : Create, Read, Update, Delete -->
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="POST"
+    >
+      <h1>Đăng kí</h1>
+
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Nhập Username"
+          required
+          minlength="6"
+          name="username"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Nhập Email"
+          required
+          name="email"
+        />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Nhập Password"
+          required
+          name="password"
+        />
+      </div>
+
+      <button type="submit">Đăng kí</button>
+
+      <!-- <input type="button" value="Đăng kí"> -->
+    </form>
+
+    <textarea
+      name=""
+      id=""
+      cols="50"
+      rows="10"
+      placeholder="Điền góp ý..."
+    ></textarea>
+
+    <select name="gender" id="gender">
+      <option value="" select>Chọn giới tính</option>
+      <option value="male">Male</option>
+      <option value="female">Famele</option>
+      <option value="other">Other</option>
+    </select>
+
+    <!-- <p>button</p>
+    <input type="button">
+    <p>checkbox</p>
+    <input type="checkbox">
+    <p>color</p>
+    <input type="color">
+    
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week"> -->
+  </body>
+</html>
