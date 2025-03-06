@@ -1,0 +1,148 @@
+html {
+  font-family: "poppins", sans-serif; /* Định nghĩa kiểu chữ chính cho toàn bộ trang là "poppins" hoặc kiểu sans-serif mặc định */
+  font-size: 14px; /* Đặt kích thước chữ mặc định cho toàn bộ trang là 14px */
+}
+
+body {
+  width: 887px; /* Đặt chiều rộng của body là 887px */
+  height: 661px; /* Đặt chiều cao của body là 661px */
+  border: 2px solid #b3c1d954; /* Tạo viền 2px màu xám nhạt với độ trong suốt */
+  border-radius: 15px; /* Bo góc viền của body thành 15px để tạo hiệu ứng tròn */
+  box-shadow: 3px 3px #b3c1d954; /* Thêm bóng cho body với độ lệch 3px ngang và dọc, màu xám nhạt */
+}
+
+main {
+  display: flex; /* Sử dụng mô hình flexbox để sắp xếp các phần tử con theo hàng ngang */
+  padding: 82px; /* Thêm khoảng cách bên trong (padding) cho main là 82px ở tất cả các cạnh */
+}
+
+.product_img {
+  width: 249px; /* Đặt chiều rộng của hình sản phẩm là 249px */
+  height: 223px; /* Đặt chiều cao của hình sản phẩm là 223px */
+  padding-right: 32px; /* Thêm khoảng cách bên phải hình là 32px để cách các phần tử khác */
+}
+
+.product_info {
+  width: 442px; /* Đặt chiều rộng của thông tin sản phẩm là 442px */
+  height: 497px; /* Đặt chiều cao của thông tin sản phẩm là 497px */
+}
+
+.free_ship {
+  display: block; /* Hiển thị phần tử như một khối, chiếm toàn bộ chiều rộng */
+  width: 112px; /* Đặt chiều rộng của thẻ miễn phí vận chuyển là 112px */
+  height: 29px; /* Đặt chiều cao của thẻ miễn phí vận chuyển là 29px */
+  color: #fff; /* Đặt màu chữ là trắng */
+  background-color: #191847; /* Đặt màu nền là xanh đậm (#191847) */
+  border-radius: 20px; /* Bo góc của thẻ thành 20px để tạo hình elip */
+  text-align: center; /* Căn giữa văn bản bên trong thẻ */
+  align-content: center; /* Căn giữa nội dung theo chiều dọc (không hiệu quả nếu chỉ có 1 dòng) */
+  margin-bottom: 10px; /* Thêm khoảng cách dưới thẻ là 10px */
+}
+
+h1 {
+  font-size: 24px; /* Đặt kích thước chữ tiêu đề là 24px */
+  margin: 0 0 32px 0; /* Đặt lề: trên 0, phải 0, dưới 32px, trái 0 */
+  color: #191847; /* Đặt màu chữ là xanh đậm (#191847) */
+  line-height: 100%; /* Đặt chiều cao dòng bằng với kích thước chữ (100%) */
+  font-weight: 600; /* Đặt độ đậm của chữ là 600 (nửa đậm) */
+}
+
+.product_price {
+  width: 369px; /* Đặt chiều rộng của phần giá sản phẩm là 369px */
+  margin: 0 0 32px 0; /* Đặt lề: trên 0, phải 0, dưới 32px, trái 0 */
+}
+
+.original_price {
+  font-size: 18px; /* Đặt kích thước chữ giá gốc là 18px */
+  line-height: 100%; /* Đặt chiều cao dòng bằng với kích thước chữ */
+  margin: 0; /* Xóa tất cả các lề */
+}
+
+.current_price {
+  font-size: 48px; /* Đặt kích thước chữ giá hiện tại là 48px */
+  color: #191847; /* Đặt màu chữ là xanh đậm (#191847) */
+  margin: 0; /* Xóa tất cả các lề */
+  font-weight: 700; /* Đặt độ đậm của chữ là 700 (đậm) */
+}
+
+.discount_time {
+  margin: 0; /* Xóa tất cả các lề */
+  font-family: 14px; /* Định nghĩa kiểu chữ (lỗi cú pháp, nên sửa thành font-size: 14px nếu muốn) */
+}
+
+.button_top {
+  width: 442px; /* Đặt chiều rộng của nút trên là 442px */
+  height: 59px; /* Đặt chiều cao của nút trên là 59px */
+  background-color: #4788e9; /* Đặt màu nền là xanh dương (#4788e9) */
+  border-radius: 8px; /* Bo góc nút thành 8px */
+  padding: 16px; /* Thêm khoảng cách bên trong nút là 16px */
+  color: #fff; /* Đặt màu chữ là trắng */
+  box-shadow: 0 7px #1c57ee; /* Thêm bóng phía dưới 7px với màu xanh đậm (#1c57ee) */
+  border: none; /* Xóa viền */
+  font-size: 18px; /* Đặt kích thước chữ là 18px */
+  margin: 0 0 32px 0; /* Đặt lề: trên 0, phải 0, dưới 32px, trái 0 */
+}
+
+.button_top:hover {
+  box-shadow: 0 7px red; /* Thay đổi bóng thành màu đỏ khi hover */
+  color: red; /* Thay đổi màu chữ thành đỏ khi hover */
+}
+
+.inventory {
+  font-size: 14px; /* Đặt kích thước chữ thông tin tồn kho là 14px */
+  position: relative; /* Đặt vị trí tương đối để làm tham chiếu cho ::before */
+  padding-left: 20px; /* Thêm khoảng cách bên trái 20px để chấm không chồng văn bản */
+  margin: 0 0 32px 0; /* Đặt lề: trên 0, phải 0, dưới 32px, trái 0 */
+}
+
+.inventory::before {
+  content: ""; /* Định nghĩa nội dung ảo cho phần tử trước */
+  display: inline-block; /* Hiển thị như một phần tử nội tuyến */
+  width: 13px; /* Đặt chiều rộng chấm là 13px */
+  height: 13px; /* Đặt chiều cao chấm là 13px */
+  background-color: #00d98b; /* Đặt màu nền chấm là xanh lá nhạt (#00d98b) */
+  border-radius: 50%; /* Tạo hình tròn cho chấm */
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  left: 0px; /* Đặt chấm ở bên trái 0px */
+  top: 50%; /* Căn giữa chấm theo chiều dọc */
+  transform: translateY(
+    -50%
+  ); /* Điều chỉnh vị trí để chấm nằm chính giữa văn bản */
+}
+
+.button_bottom {
+  display: flex; /* Sử dụng mô hình flexbox để sắp xếp các phần tử con */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+  text-align: center; /* Căn giữa văn bản bên trong */
+}
+
+.button_bottom img {
+  width: 32px; /* Đặt chiều rộng của hình ảnh là 32px */
+  height: 32px; /* Đặt chiều cao của hình ảnh là 32px */
+  margin-right: 8px; /* Thêm khoảng cách bên phải hình ảnh là 8px */
+}
+
+.left_button {
+  margin-right: 16px; /* Thêm khoảng cách bên phải nút trái là 16px */
+}
+
+.left_button,
+.rift_button {
+  display: flex; /* Sử dụng mô hình flexbox để sắp xếp nội dung */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+  width: 213px; /* Đặt chiều rộng của nút là 213px */
+  height: 64px; /* Đặt chiều cao của nút là 64px */
+  background-color: #fff; /* Đặt màu nền là trắng */
+  border: 2px solid #c9c9da; /* Tạo viền 2px màu xám nhạt (#c9c9da) */
+  border-radius: 8px; /* Bo góc nút thành 8px */
+}
+
+.button_bottom_1,
+.button_bottom_2 {
+  font-size: 18px; /* Đặt kích thước chữ của các nút dưới là 18px */
+  border: none; /* Xóa viền */
+  background-color: #fff; /* Đặt màu nền là trắng */
+  margin-left: 8px; /* Thêm khoảng cách bên trái chữ là 8px */
+}
